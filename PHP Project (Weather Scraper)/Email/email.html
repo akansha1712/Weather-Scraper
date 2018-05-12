@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <style>
+            #body{
+                 background-color:beige;
+            }
+#emailToid,#emailFromid,#subjectid {
+    font-size: 14pt;
+    height: 32px;
+   
+    background-color:floralwhite;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width:100%;
+  
+}    
+    #emailbodyid {
+         width:100%;
+    font-size: 14pt;
+    height: 142px;
+    
+         background-color:floralwhite;
+}
+            
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;a
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}          
+            
+            
+        </style>
+    </head>
+   <body id="body">
+    
+<form method="POST" action="email.php">
+    To Send an Email Fill Out the Details below:
+    
+    <br><br>
+    From:<input type="text" name="emailFrom" id="emailFromid" required/>
+    <br><br>
+    To:<input type="text" name="emailTo" id="emailToid" required/>
+    <br><br>
+    Subject:<input type="text" name="subject" id="subjectid" />
+    <br><br>
+    Compose Email:<input type="text" name="emailbody" id="emailbodyid"/>
+    <br><br>
+    <input type="submit" name="send" id="sendid" value="send"/>
+    
+       
+       
+       
+       </form>
+    
+    
+    
+    
+    
+    </body>
+</html>
